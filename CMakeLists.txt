@@ -46,9 +46,6 @@ target_sources(pas PRIVATE
 	 
 	 "src/pasAnaInfo.cpp"
 	 "src/pasAnaReco.cpp"
-	 "src/pasAnaSetup.cpp"
-	 "src/pasAnaStat.cpp"
-	 #"src/pasAnaTest.cpp"
 )
 
 

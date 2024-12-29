@@ -31,7 +31,6 @@
 // PAS analysis units.
 //#include "pasAnaSetup.h"
 #include "pasAnaInfo.h"
-#include "pasAnaStat.h"
 #include "pasAnaReco.h"
 
 
@@ -68,12 +67,12 @@ int main(int argc, char** argv)
 	pas::ana::Reco anaReco(MA);
 
 	// Plot arbitrary data
-	if (MA._Misc.flagDataPlot) misc.DataPlot(MA);
+	//if (MA._Misc.flagDataPlot) misc.DataPlot(MA);
 
 	// Performs a simulation and analysis.
 	if (!MA._Misc.flagDataPlot && MA._Ana.flagReco) {
 		pas::ana::Info(MA);		// Shows analysis setting and useful info.
-		if (MA._Ana.flagStat) pas::ana::Stat(MA);	// Performs statistical checks.
+		//if (MA._Ana.flagStat) pas::ana::Stat(MA);	// Performs statistical checks.
 		anaReco.Run();		// Performs reco algorithm MCs.
 	}
 
